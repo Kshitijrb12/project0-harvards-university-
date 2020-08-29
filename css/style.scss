@@ -1,0 +1,178 @@
+// COURSE: Web Programming with Python and JavaScript
+// SUBMITTED BY: KSHITIJ BARAPATRE
+// PROJECT: PROJECT0
+
+$size:20px;
+$planewhite:#fff;
+$textcen:center;
+$dark: rgb(0,0,0);
+
+*
+{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+p::first-letter {
+  color: #ff0000;
+}
+
+input[type=text]{
+background-color:#f2d8b1;
+}
+
+h4{
+  color:#fff;
+}
+#button{
+  color:$dark;
+}
+.portion{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cover{
+  background-image: url("../assets/1.jpg");
+  @extend .portion;
+  h1{
+    color:$planewhite;
+    text-align:$textcen;
+    font-family: 'Anton', sans-serif;
+  }
+  h5{
+    color:$planewhite;
+    text-align:$textcen;
+  }
+  p{
+    text-align:$textcen;
+    font-size:30px;
+    padding-top:50px;
+  }
+}
+
+.page2{
+  background-image: url("../assets/2.jpg");
+  @extend .portion;
+}
+
+.page3{
+  background-image: url("../assets/3.jpg");
+  @extend .portion;
+}
+
+.main_about{
+  background-image: url("../assets/2.jpg");
+  @extend .portion;
+}
+footer{
+  background-color:$dark;
+}
+
+/* RESPONSIVE PAGE START */
+ @media (max-width: 450px)  /* 450px > object (mobile phone)*/
+{
+  h5 {
+     padding-top:550px;
+      }
+  .cover,.page3{
+          height: 820px;
+        }
+  .page2{
+          height:900px;
+        }
+        .black_box{
+          font-size:17px;
+        }
+  .main_about{
+    max-height:2000px;
+  }
+}
+
+
+@media (min-width: 451px)    /*451px < object (Desktop)*/
+{
+  h5 {
+      padding-top:400px;
+      }
+  .cover, .page2, .page3{
+        height: 600px;
+        }
+  .black_box{
+    font-size:$size;
+  }
+  .main_about{
+    height:1000px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {     /* 450px > object (mobile phone)*/
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 451px) {      /* 451px < object (Desktop)*/
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* RESPONSIVE PAGE ENDS */
+
+
+/* NAV BAR START */
+.topnav {
+  overflow: hidden;
+  background-color: $dark;
+  font-family: 'Teko', sans-serif;
+}
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: $size;
+}
+
+.topnav a:hover {
+  color: #baa4a5;
+  background-color: rgba(61, 31, 31, 0.6);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+.topnav > a {
+  color:#f2f2f2;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+   z-index: 1;
+}
+/* NAV BAR ENDS */
+.black_box{
+  background-color: rgba(0,0,0,0.5);
+  padding: $size;
+  border-radius: 10px;
+}

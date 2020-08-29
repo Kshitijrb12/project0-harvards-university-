@@ -1,0 +1,154 @@
+<!--
+COURSE: Web Programming with Python and JavaScript
+SUBMITTED BY: KSHITIJ BARAPATRE
+PROJECT: PROJECT0 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Project0-Kshitij RB.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300&family=Barlow+Condensed:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- navbar start -->
+    <div class="sticky">
+    <div class="topnav" id="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="#">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="navbar()"><i class="fa fa-bars"></i></a>
+    </div>
+    </div>
+    <!-- navbar ends -->
+
+
+    <!-- form part start -->
+    <div class="main_about">
+      <div class="container-fluid">
+        <form >
+               <h3 style="font-family: 'Anton', sans-serif;text-align:left;padding:20px;text-align:center;color:#000;">Drop me a Message</h3>
+               <div class="row"  style="background-color:rgba(0,0,0,0.5);padding:20px;border-radius:20px;margin:10px;">
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                        </div>
+
+                      </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;  background-color:#f2d8b1;"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group" style="font-size:20px;padding-left:20px;">
+                          <input type="submit" class="btn btn-info" name="btnSubmit" class="btnContact" value="Send" />
+                      </div>
+                </div>
+            </form>
+
+            <div class="row" style="padding:10px;">
+              <div class="col-md-6" style="margin-top:30px;">
+                <div class="black_box">
+                  <h4>ADDRESS:</h4><br/>
+                  <p style="color:#fff;">Pin code:440037</p>
+                  <p style="color:#fff;">306, Om Heights Appartment, Besa-pimpla road, NAGPUR</p>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-top:30px;">
+                <div class="black_box">
+                  <h4>CONTACT:</h4><br/>
+                  <p style="color:#fff;">+91 8956334422</p>
+
+
+                </div>
+              </div>
+            </div>
+            <table class="table" style="color:#fff;">
+              <thead>
+                <tr>
+                  <th scope="col">Sr. no.</th>
+                  <th scope="col">NAME</th>
+                  <th scope="col">EMAIL</th>>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>xyz</td>
+                  <td>mail.xyz.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>abc</td>
+                  <td>mail.xyz.com</td>
+                </tr
+              </tbody>
+            </table>
+      </div>
+    </div>
+    <!-- form part ends -->
+
+
+    <!-- Footer -->
+    <footer style="background-color:rgb(0,0,0);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" style="padding-top:20px;">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/" style="color:#fff;text-decoration:none;">
+                <i class="fa fa-facebook-square" aria-hidden="true" style="font-size:30px;"></i>
+              </a>
+              <!-- Twitter -->
+              <a href="https://www.twitter.com/" style="color:#fff;text-decoration:none;">
+              <i class="fa fa-tumblr-square" aria-hidden="true" style="font-size:30px;"></i>
+              </a>
+              <!--Linkedin -->
+              <a href="https://www.linkedin.com/" style="color:#fff;text-decoration:none;">
+                <i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:30px;"></i>
+              </a>
+              <!--Instagram-->
+              <a href="https://www.instagram.com/" style="color:#fff;text-decoration:none;">
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size:30px;"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="color:#fff;">© 2020 Copyright:
+        <a href="#" style="color:#fff;text-decoration:none;">www.kshitijrb.info</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <!-- javascript navbar start -->
+    <script>
+    function navbar()
+    {
+      var x = document.getElementById("navigation");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <!-- javascript navbar ends -->
+  </body>
+</html>
